@@ -21,12 +21,12 @@ public class VectorMaxExample {
         }
 
         int half = dim / 2;
-        int max = 0;
+        int max = vector[0] + vector[dim-1];
         int sum = 0;
         int j = 0;
+        System.out.printf("a[%d] + a[%d] = %d\n", 1, dim, max);
 
-
-        for (int i = 0; i < half; i++) {
+        for (int i = 1; i < half; i++) {
             j = dim - i - 1;
             sum = vector[i] + vector[j];
 
@@ -34,7 +34,7 @@ public class VectorMaxExample {
                 System.out.printf("a[%d] + a[%d] = %d\n", i + 1, j + 1, sum);
             }
 
-            if (i == 0 || sum > max) {
+            if (sum > max) {
                 max = sum;
             }
         }
