@@ -7,7 +7,8 @@ import org.tbogdanov.epamhw.module2.officesupplies.properties.Manufacturer;
  */
 public abstract class OfficeSupply {
 
-    private final int typePrice = 0;
+    protected int typePrice;
+    protected String typeName;
 
     protected Manufacturer manufacturer;
     protected String name;

@@ -8,8 +8,6 @@ import org.tbogdanov.epamhw.module2.officesupplies.properties.Message;
  */
 public class Paper extends OfficeSupply {
 
-    private final String typeName = "Paper";
-    private final int typePrice = 1;
 
     private Message[] messages;
     private int capacity;
@@ -20,6 +18,8 @@ public class Paper extends OfficeSupply {
         this.capacity = capacity;
         messages = new Message[capacity];
         messageCount = 0;
+        this.typeName = "Paper";
+        this.typePrice = 1;
     }
 
     public void addMessage(String message, boolean canBeErased) throws Exception {

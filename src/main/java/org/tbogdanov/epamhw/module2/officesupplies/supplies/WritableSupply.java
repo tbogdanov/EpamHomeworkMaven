@@ -8,8 +8,6 @@ import org.tbogdanov.epamhw.module2.officesupplies.properties.Manufacturer;
  */
 public abstract class WritableSupply extends OfficeSupply {
 
-    private final int typePrice = 0;
-
     private Color color;
 
     WritableSupply(Manufacturer manufacturer, String name, Color color) {
@@ -32,4 +30,7 @@ public abstract class WritableSupply extends OfficeSupply {
     public Color getColor() {
         return color;
     }
+
+    @Override
+    public String getFullName() { return String.format("%s %s %s %s", typeName, manufacturer, name, color); }
 }

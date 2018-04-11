@@ -8,12 +8,10 @@ import org.tbogdanov.epamhw.module2.officesupplies.properties.Manufacturer;
  */
 public class Pencil extends WritableSupply {
 
-    private int typePrice = 15;
-    private String typeName = "Pencil";
-    private String name;
-
     public Pencil(Manufacturer manufacturer, String name, Color color) {
         super(manufacturer, name, color);
+        this.typeName = "Pencil";
+        this.typePrice = 15;
     }
 
     public void writeOnPaper(Paper targetPaper, String what)  {

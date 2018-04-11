@@ -8,11 +8,10 @@ import org.tbogdanov.epamhw.module2.officesupplies.properties.Message;
  */
 public class Scissors extends OfficeSupply {
 
-    private final int typePrice = 120;
-    private final String typeName = "Scissors";
-
     public Scissors(Manufacturer manufacturer, String name) {
         super(manufacturer, name);
+        this.typeName = "Scissors";
+        this.typePrice = 60;
     }
 
     public Paper[] cutPaperToMessages(Paper paper) {
