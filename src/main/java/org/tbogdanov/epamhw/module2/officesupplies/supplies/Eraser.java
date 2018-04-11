@@ -8,11 +8,10 @@ import org.tbogdanov.epamhw.module2.officesupplies.properties.Message;
  */
 public class Eraser extends OfficeSupply {
 
-    private final int typePrice = 25;
-    private final String typeName = "Eraser";
-
     public Eraser(Manufacturer manufacturer, String name) {
         super(manufacturer, name);
+        this.typeName = "Eraser";
+        this.typePrice = 30;
     }
 
     public Paper getPaperWithoutErasableMessages(Paper paper) {

@@ -8,10 +8,10 @@ import org.tbogdanov.epamhw.module2.officesupplies.properties.Manufacturer;
  */
 public class Pen extends WritableSupply {
 
-    private final int typePrice = 20;
-
     public Pen(Manufacturer manufacturer, String name, Color color) {
         super(manufacturer, name, color);
+        this.typeName = "Pen";
+        this.typePrice = 20;
     }
 
     public Pen(Pen orig) {
