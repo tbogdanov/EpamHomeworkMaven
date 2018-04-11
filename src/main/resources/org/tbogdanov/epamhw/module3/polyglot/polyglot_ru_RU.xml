@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="answer1">Я его тоже не нашёл.</entry>
+    <entry key="answer2">Дворецкий!</entry>
+    <entry key="answer3">42</entry>
+    <entry key="chooseLanguageMessage">Choose language / Выберите язык (en, ru, q for exit / для выхода) </entry>
+    <entry key="languageErrorMessage">No such language. Choose (en, ru, q for quit)
+        Нет такого языка. Выберите (en, ru, q для выхода)
+    </entry>
+    <entry key="noSuchQuestionMessage">Нет вопроса под таким номером!</entry>
+    <entry key="question1">Где Волли?</entry>
+    <entry key="question2">Кто убийца?</entry>
+    <entry key="question3">Ответ на главный вопрос жизни, Вселенной и всего такого?</entry>
+    <entry key="startMessage">Введите номер вопроса (0 для выхода)</entry>
+</properties>
